@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register Page</title>
+<style>
+body{
+background-color:teal;
+padding:25px;
+margin:26px;
+margin-left: 265px;
+
+}
+
+
+.container{
+background-color:threedface;
+<!--font-family:fantasy;-->
+padding:20px;
+margin-right:490px;
+margin-left:50px;
+border:3px solid yellow;
+text-align: center;
+width:430px;
+
+}
+label{
+float:left;
+margin-top:2px;
+width:130px;
+marign-bottom:10px;
+text-align:center;
+}
+.submit{
+font-style: oblique;}
+h1{
+text-align:center;
+font-size: 45px;
+font-family: cursive;}
+
+</style>
+</head>
+<body>
+<form action="registerPage" method="Post">
+<div class="container">
+<h1>REGISTER</h1>
+ <a href="registerPage"></a>
+ <div><label>FIRST NAME</label> 
+        <input type="text" placeholder="Enter firstname" name="firstname"></div>
+<br>
+<div><label>LAST NAME</label>
+      <input type="text" placeholder="lastName" name="lastname"></div>
+<br>
+<div><label>PH NO.</label>
+       <input type="number" placeholder="Enter 10 digit no." name="phno"></div>
+<br>
+<div><label>EMAIL</label>
+          <input type="email"  name="email"></div><br>
+          
+<div><label>PASSWORD</label> 
+         <input type="password"  name="pass"></div><br>
+         
+<div class="submit"><input type="SUBMIT" name="submit"></div>
+</div>
+</form>
+</body>
+</html>
