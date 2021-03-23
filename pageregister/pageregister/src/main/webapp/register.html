@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>register page</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body {
+	padding: 0px;
+	margin: 35px;
+	background-color:lemonChiffon;
+}
+
+.container {
+max-width:500px;
+width:100%;
+margin: 20px auto;
+padding: 30px;
+font-family: cursive;
+background-color:#669999;
+box-shadow:1px 1px 2px rgba(0,0,0,0.125);
+}
+
+.title {
+	text-align: center;
+    text-transform:uppercase;
+    font-size:25px;
+    margin-bottom:30px;
+}
+.form .container{
+width:100%;
+}
+.form .container .input-field {
+margin-bottom:15px;
+display:flex;
+algin-items:center;
+/*box-shadow: 1px 1px 5px rgba(0,0,0,0.3);*/
+}
+.form .container .input-field label{
+width:100px;
+margin-right:20px;
+font-size:14px;
+}
+.form .container .input-field .gender{
+margin:0px;
+font-size:14px;
+
+}
+
+.form .container .input-field .btn{
+width:100px;
+padding:8px 10px;
+margin-top:10px;
+margin-left:150px;
+font-size:15px;
+border:0;
+text-algin:center;
+cursor:pointer;
+border:radius:3px;
+outline:none;}
+
+
+</style>
+</head>
+<body>
+	<header></header>
+<div class="form">
+	<form action="registercheck1" method=post>
+	<div class="container">
+	<div class="title">Registration Form</div>
+		<div class="input-field">
+			<label>First Name</label>
+			    <input type="text" name="fname"> 
+			    </div>
+	    <div class="input-field">
+			<label>Last Name</label>
+			     <input type="text" name="lname"> 
+			     </div>
+	   	<div class="input-field">
+			<label>Gender :</label> 
+			    <label> Female</label><input type="radio" name="gender" class="gender">
+			     <label>Male</label><input type="radio" name="gender" class="gender"> 
+			     </div>
+	  	<div class="input-field">	
+			<label>PhoNO</label>
+			    <input type="text" name="phno">
+			    </div>
+    	<div class="input-field">	    
+			<label>DOB</label>
+			    <input type="datetime" name="date"> 
+			   </div>
+	    <div class="input-field">
+			<label>Email</label>
+			    <input type="email" name="email"> 
+			 </div>
+		<div class="input-field">
+			 <label>Password</label>
+			      <input type="password" name="passw">
+			      </div>
+	   <div class="input-field">
+		   <label>Address</label>
+			      <textarea cols="40" rows="3" value="address"></textarea>
+			      </div>
+	  	<div class="input-field">
+			<label>City</label>
+			<input type="text" name="city">
+			</div>
+	 	<div class="input-field"> 
+			<label>State</label>
+			  <input type="text" name="state"> 
+			  </div>
+	 <div class="input-field">
+			<input type="submit" value="submit" class="btn">
+			</div>
+		</div>
+	
+	</form>
+	</div>
+</body>
+
+</html>
