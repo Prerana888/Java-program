@@ -21,13 +21,13 @@ public class JavaMailsender {
 		
 		mailSenderImpl.setJavaMailProperties(javaMailProperties);
 		
-		String []bccs = {"preranam.xworkz@gmail.com","motgimallinath@gmail.com"};
+		String []bccs = {""};
 		SimpleMailMessage message = new SimpleMailMessage();
-		message.setFrom("preranam.xworkz@gmail.com");
-		message.setTo("preranam.xworkz@gmail.com","motgiprerana@gmail.com");
+		message.setFrom("motgiprerana@gmail.com");
+		message.setTo("motgiprerana@gmail.com");
 		message.setBcc(bccs);
 		message.setSubject("Demo Mail Sender");
-		message.setText("Hello Everyone \n I am Prerana M \n From Xworkz \n");
+		message.setText("Hello Everyone \n I am Prerana M \n");
 		
 		mailSenderImpl.send(message);
 	}
